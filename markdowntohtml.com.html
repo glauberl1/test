@@ -1,0 +1,75 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h2 id="documenta-o-melhoria-e-busca-de-xml-de-nf-e-tmsac17-sigatms-">DOCUMENTAÇÃO - Melhoria e Busca de XML DE NF-e (TMSAC17 - SIGATMS)</h2>
+<h2 id="cont-udo">CONTÉUDO</h2>
+<ul>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">01. VISÃO GERAL</a>-01.VIS%C3%83OGERAL)</li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">02. CONFIGURAÇÃO PARA IMPORTAÇÃO</a>-02.CONFIGURA%C3%87%C3%83OPARAIMPORTA%C3%87%C3%83O)</li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">2.1 Configuração TSS no Protheus SIGATMS</a>-2.1Configura%C3%A7%C3%A3oTSSnoProtheusSIGATMS)<ul>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">TELA DE CONFIGURAÇÃO</a>-TELADECONFIGURA%C3%87%C3%83O)</li>
+</ul>
+</li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">2.2 Schedule de Importação</a>-2.2ScheduledeImporta%C3%A7%C3%A3o)<ul>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">CONFIGURAÇÃO - VIA JOB</a>-CONFIGURA%C3%87%C3%83O-VIAJOB)</li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">PROCESSAMENTO VIA ROTINA CONFERÊNCIA DE COLETA</a>-PROCESSAMENTOVIAROTINACONFER%C3%8ANCIADECOLETA)</li>
+</ul>
+</li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">03. ROTINA CONFERÊNCIA DE COLETA</a>-03.ROTINACONFER%C3%8ANCIADECOLETA)</li>
+<li></li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">04. GRAVAÇÃO DOS DADOS</a>-04.GRAVA%C3%87%C3%83ODOSDADOS)</li>
+<li><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">05. TABELAS UTILIZADAS</a>-05.TABELASUTILIZADAS)</li>
+<li><p><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">06. ASSUNTOS RELACIONADOS</a>-06.ASSUNTOSRELACIONADOS)</p>
+<p><a href="https://tdn.totvs.com.br/pages/releaseview.action?pageId=618870156#MelhoriaBuscadeXMLdeNFe(TMSAC17SIGATMS">01. VISÃO GERAL</a>-01.VIS%C3%83OGERAL) </p>
+</li>
+</ul>
+<p>Foi implementada a rotina de busca de XML completo da NF-e na SEFAZ.</p>
+<p>Quando a NF-e for emitida contra o CNPJ da empresa, será possível baixar o XML através de consulta junto ao Órgão Validador SEFAZ, facilitando a integração com o Módulo TOTVS Logística TMS.</p>
+<p>Sendo assim, foi disponibilizado na rotina de <a href="https://tdn.totvs.com/pages/viewpage.action?pageId=485877452">Conferência de Coleta (TMSA461 - SIGATMS)</a> a visualização das chaves das NFe-s.</p>
+<blockquote>
+<p><strong>Importante:</strong></p>
+<p>Estas melhorias estarão disponíveis à partir do <strong>release 12.1.33.</strong></p>
+</blockquote>
+<h2 id="-02-configura-o-para-importa-o-"><strong>02. CONFIGURAÇÃO PARA IMPORTAÇÃO</strong></h2>
+<h2 id="-2-1-configura-o-tss-no-protheus-sigatms-"><strong>2.1 Configuração TSS no Protheus SIGATMS</strong></h2>
+<p>Para importação do XML das NFe-s, será necessário efetuar a configuração dos parâmetros do TSS.</p>
+<p>Para isso, acessar o menu Miscelânea &gt; Simulado &gt; CTE SEFAZ.</p>
+<p>Na tela seguinte, escolha a opção MDFe.</p>
+<p><img src="DOCUMENTAC%CC%A7A%CC%83O%20-%20Melhoria%20e%20Busca%20de%20XML%20DE%20NF-e%20(%20a405f6bb279349d3822fab6641b2908c/Untitled.png" alt="Untitled"></p>
+<p>Clique em Outras Ações &gt; <strong>Manifesto Destino.</strong></p>
+<p><img src="DOCUMENTAC%CC%A7A%CC%83O%20-%20Melhoria%20e%20Busca%20de%20XML%20DE%20NF-e%20(%20a405f6bb279349d3822fab6641b2908c/Untitled%201.png" alt="Untitled"></p>
+<p>Configure o ambiente como desejado (homologação/produção) e salve o registro.</p>
+<h3 id="-tela-de-configura-o-"><strong>TELA DE CONFIGURAÇÃO</strong></h3>
+<p><img src="DOCUMENTAC%CC%A7A%CC%83O%20-%20Melhoria%20e%20Busca%20de%20XML%20DE%20NF-e%20(%20a405f6bb279349d3822fab6641b2908c/Untitled%202.png" alt="Untitled"></p>
+<h2 id="-2-2-schedule-de-importa-o-"><strong>2.2 Schedule de Importação</strong></h2>
+<p>Para o processamento (busca da NF-e) na SEFAZ, pode ser feito de duas maneiras. Uma delas é a configuração do Job (Schedule) através do configurador do Protheus (SIGACFG) ou através de opção manual localizada no Outras Ações da rotina <a href="https://tdn.totvs.com/pages/viewpage.action?pageId=485877452">Conferência de Coleta (TMSA461 - SIGATMS)</a>.</p>
+<h3 id="-configura-o-via-job-"><strong>CONFIGURAÇÃO - VIA JOB</strong></h3>
+<p>Acessar o Configurador (SIGACFG), e, navegar até o menu  Ambiente &gt; Schedule &gt; Schedule;</p>
+<p>Configure os campos conforme abaixo:</p>
+<ul>
+<li>Rotina: preencha com a função <strong>TMSAC17</strong>;</li>
+<li>Empresa/Filial: Selecione todas as filiais que irão executar o schedule de busca das NFes.</li>
+<li>Módulo: 43 - SIGATMS</li>
+<li>Relação a recorrência, recomendamos configurar o Job com tempo de execução maior que 5 minutos ou maior intervalo - para evitar consumo indevido.</li>
+</ul>
+<p><img src="DOCUMENTAC%CC%A7A%CC%83O%20-%20Melhoria%20e%20Busca%20de%20XML%20DE%20NF-e%20(%20a405f6bb279349d3822fab6641b2908c/Untitled%203.png" alt="Untitled"></p>
+<h3 id="-processamento-via-rotina-confer-ncia-de-coleta-"><strong>PROCESSAMENTO VIA ROTINA CONFERÊNCIA DE COLETA</strong></h3>
+<p>Foi disponibilizado no Outras Ações da rotina <a href="https://tdn.totvs.com/pages/viewpage.action?pageId=485877452">Conferência de Coleta (TMSA461 - SIGATMS)</a> a opção <strong>Processa NF-e</strong> que executará o processamento (busca da NF-e) na SEFAZ assim que for acionada.</p>
+<p><img src="DOCUMENTAC%CC%A7A%CC%83O%20-%20Melhoria%20e%20Busca%20de%20XML%20DE%20NF-e%20(%20a405f6bb279349d3822fab6641b2908c/Untitled%204.png" alt="Untitled"></p>
+<h2 id="-03-rotina-confer-ncia-de-coleta-"><strong>03. ROTINA CONFERÊNCIA DE COLETA</strong></h2>
+<p>Com ambiente atualizado, será demonstrado ao acessar a rotina de <a href="https://tdn.totvs.com/pages/viewpage.action?pageId=485877452">Conferência de Coleta (TMSA461 - SIGATMS)</a>, a tabela filha (DMH) que permitirá a digitação manual ou leitura do código de barras da DANFE, armazenando-a para uma futura importação - este procedimento poderá ser utilizado <strong>com ou sem</strong> a integração do processo Checklist;</p>
+<p>Esta tabela irá conter os campos de vínculo com a conferência da coleta, a chave eletrônica da DANFE, e o status que indicará que o registro já foi processado ou não <strong>(*)</strong> imagem abaixo.</p>
+<p><img src="DOCUMENTAC%CC%A7A%CC%83O%20-%20Melhoria%20e%20Busca%20de%20XML%20DE%20NF-e%20(%20a405f6bb279349d3822fab6641b2908c/Untitled%205.png" alt="Untitled"></p>
+<h2 id="-04-grava-o-dos-dados-"><strong>04. GRAVAÇÃO DOS DADOS</strong></h2>
+<p>Quando encontrado o XML da NFe na SEFAZ, através do Job ou do processo manual, automaticamente o arquivo será gravado na pasta XMLNFE\NEW referente a importação do EDI (<a href="https://centraldeatendimento.totvs.com/hc/pt-br/articles/360026949131-MP-TMS-TMSAE80-Importa%C3%A7%C3%A3o-de-Notas-Fiscais-XML">Clique aqui</a> para saber mais sobre configuração do EDI). Este arquivo ficará disponível para ser importado para a tabela DE5 (EDI - Notas Fiscais).</p>
+<h2 id="-05-tabelas-utilizadas-"><strong>05. TABELAS UTILIZADAS</strong></h2>
+<ul>
+<li>DMH - Conferência de NF-e</li>
+</ul>
+<h2 id="-06-assuntos-relacionados-"><strong>06. ASSUNTOS RELACIONADOS</strong></h2>
+<ul>
+<li><a href="https://tdn.totvs.com/pages/viewpage.action?pageId=485877452">Conferência de Coleta (TMSA461 - SIGATMS)</a></li>
+<li><a href="https://centraldeatendimento.totvs.com/hc/pt-br/articles/360026949131-MP-TMS-TMSAE80-Importa%C3%A7%C3%A3o-de-Notas-Fiscais-XML">MP - TMS - TMSAE80 Importação de Notas Fiscais - XML</a></li>
+</ul>
+<p><a href="https://tdn.totvs.com.br/label/PROT/documento_de_referencia">documento_de_referencia</a><a href="https://tdn.totvs.com.br/label/PROT/totvs_logistica_tms">totvs_logistica_tms</a><a href="https://tdn.totvs.com.br/label/PROT/linha_protheus">linha_protheus</a><a href="https://tdn.totvs.com.br/label/PROT/tms_protheus">tms_protheus</a><a href="https://tdn.totvs.com.br/label/PROT/sigatms">sigatms</a><a href="https://tdn.totvs.com.br/label/PROT/gestao_de_transporte">gestao_de_transporte</a><a href="https://tdn.totvs.com.br/label/PROT/bra">bra</a><a href="https://tdn.totvs.com.br/label/PROT/supply_ml_log_tms">supply_ml_log_tms</a><a href="https://tdn.totvs.com.br/label/PROT/versao_12">versao_12</a><a href="https://tdn.totvs.com.br/label/PROT/tmsc17">tmsc17</a><a href="https://tdn.totvs.com.br/label/PROT/busca_nfes">busca_nfes</a><a href="https://tdn.totvs.com.br/label/PROT/sefaz">sefaz</a><a href="https://tdn.totvs.com.br/label/PROT/edi">edi</a><a href="https://tdn.totvs.com.br/label/PROT/tmsa461">tmsa461</a></p>
+</body></html>
